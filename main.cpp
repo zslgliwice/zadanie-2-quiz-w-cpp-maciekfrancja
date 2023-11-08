@@ -1,54 +1,115 @@
 #include <iostream>
-#include <windows.h>
 #include <cstdlib>
-
+#include <Windows.h>
 using namespace std;
-
-string imie;
-string odp;
 
 int main()
 {
-    //https://cpp0x.pl/kursy/Kurs-WinAPI-C++/Roznosci/Kolory-w-konsoli/374
-    HANDLE uchwyt = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(uchwyt, 12);
-    cout << "\aPodaj imie: ";
-    cin >> imie;
     int pkt = 0;
+    string odpowiedz;
 
-    system("cls");
-    cout<< "3";
-    Sleep(1000);
-    system("cls");
-    cout<< "3..2";
-    Sleep(1000);
-    system("cls");
-    cout<< "3..2..1..";
-    Sleep(1000);
+    Sleep(3000);
     system("cls");
 
-    cout << imie << " witaj w tescie z programowania\n";
-
-    cout << "Co to jest C++?"<<endl;
-    cout << "a) Piosenkarka"<<endl;
-    cout << "b) Jezyk programowania"<<endl;
-    cout << "c) Mlynek do herbaty"<<endl;
-    cout << "Twoja odpowiedz: ";
-    cin >> odp;
-    if(odp == "b")
+    cout << "witaj w tescie ogolnym" << endl;
+    cout << "Data terrorystycznego ataku na WTC to:" << endl;
+    cout << "a) 11 sierpnia 2001 r." << endl;
+    cout << "b) 11 września 2001 r." << endl;
+    cout << "c) 11 października 2001 r." << endl;
+    cin >> odpowiedz;
+    if (odpowiedz == "b")
     {
-        cout << "Poprawna odpowiedz!";
+        cout << "Brawo! odpowiedziales poprawnie" << endl;
         pkt++;
+        Sleep(3000);
+        system("cls");
     }
     else
     {
-        cout << "Zle! Jest to jezyk programowania!";
-
+        cout << "Zle! poprawna odpowiedź to b" << endl;
+        Sleep(3000);
+        system("cls");
     }
-    Sleep(3000);
-    system("cls");
+    cout << "Panczenisci do uprawiania swojego sportu potrzebuja:" << endl;
+    cout << "a karabinku." << endl;
+    cout << "b) lyzew." << endl;
+    cout << "c) nart." << endl;
+    cin >> odpowiedz;
+    if (odpowiedz == "b")
+    {
+        cout << "Brawo! odpowiedziales poprawnie" << endl;
+        pkt++;
+        Sleep(3000);
+        system("cls");
+    }
+    else
+    {
+        cout << "Zle! poprawna odpowiedź to b" << endl;
+        Sleep(3000);
+        system("cls");
+    }
+    cout << "Michael Jordan zdobyl tytuly mistrza NBA z druzyna:" << endl;
+    cout << "a Chicago Bulls." << endl;
+    cout << "b) Houston Rockets." << endl;
+    cout << "c) Boston Celtics." << endl;
+    cin >> odpowiedz;
+    if (odpowiedz == "a")
+    {
+        cout << "Brawo! odpowiedziales poprawnie" << endl;
+        pkt++;
+        Sleep(3000);
+        system("cls");
+    }
+    else
+    {
+        cout << "Zle! poprawna odpowiedź to a" << endl;
+        Sleep(3000);
+        system("cls");
+    }
+    cout << "Jak nazywal sie brat Boleslawa Krzywoustego?" << endl;
+    cout << "a) Mieszko." << endl;
+    cout << "b) Jaroslaw." << endl;
+    cout << "c) Zbigniew." << endl;
+    cin >> odpowiedz;
+    if (odpowiedz == "c")
+    {
+        cout << "Brawo! odpowiedziales poprawnie" << endl;
+        pkt++;
+        Sleep(3000);
+        system("cls");
+    }
+    else
+    {
+        cout << "Zle! poprawna odpowiedź to c" << endl;
+        Sleep(3000);
+        system("cls");
+    }
+    cout << "Anita Wlodarczyk zdobyla dwa złote medale olimpijskie w:" << endl;
+    cout << "a) rzucie mlotem" << endl;
+    cout << "b) pchnieciu kula" << endl;
+    cout << "c) skoku w dal" << endl;
+    cin >> odpowiedz;
+    if (odpowiedz == "a")
+    {
+        cout << "Brawo! odpowiedziales poprawnie" << endl;
+        pkt++;
+        Sleep(3000);
+        system("cls");
+    }
+    else
+    {
+        cout << "Zle! poprawna odpowiedź to a" << endl;
+        Sleep(3000);
+        system("cls");
+    }
+    cout << "ilosc zdobytych punktow: " << pkt << endl;
+
+   
+
+
 
 
 
     return 0;
 }
+
